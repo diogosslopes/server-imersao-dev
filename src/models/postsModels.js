@@ -23,7 +23,7 @@ export async function updatePost(id, newPost) {
     console.log(id)
     console.log(newPost)
     const db = conexao.db("instabytes")
-    const posts = db.collection("posts")
+    const posts = db.collection("posts") 
     const objID = ObjectId.createFromHexString(id)
 
     
